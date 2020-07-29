@@ -32,7 +32,12 @@ button {
   color: #FFFEFC;
 }
 
-
+.operator-btn-div:active .operator-btn,
+.number-btn-div:active .number-btn,
+.other-btn-div:active .other-btn {
+  position: relative;
+  top: 1px;
+}
 
 .operator-btn:focus,
 .number-btn:focus,
