@@ -88,7 +88,7 @@ function App() {
 
   return (
     <div className="App mx-auto vh-100 d-flex align-items-center" style={{ maxWidth: "411px", }}>
-      <div className="inner-app-div border">
+      <div className="inner-app-div">
         <Display display={display} result={result} />
         <ButtonPanel
           clearAllOutput={clearAllOutput}
