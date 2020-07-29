@@ -1,32 +1,19 @@
 body {
-  background-color: black;
+  background-color: #414650;
 }
 
-#btn-0-div {
-  width: 160px;
+.button-panel {
+  background-color: #414650;
 }
-
-#btn-0,
-#btn-del {
-  width: 144px !important;
-  border-radius: 32px !important;
-}
-
-.rounded-circle {
-  width: 64px !important;
-  height: 64px !important;
-}
-
-
 
 #display-out {
-  background-color: black;
+  background-color: transparent;
   color: #FFFFFF;
   padding: 0 8px;
 }
 
 #result-out {
-  background-color: black;
+  background-color: transparent;
   padding: 0 8px;
   color: #A5A5A5;
 }
@@ -40,26 +27,24 @@ button {
   color: #FFFFFF;
 }
 
-.operator-btn {
-  background-color: #FF9507;
+.operator-btn-div {
+  background-color: #17A1E9;
   color: #FFFEFC;
 }
 
-.other-btn,
-#btn-del {
-  background-color: #A5A5A5;
-  color: black;
+.other-btn-div {
+  background-color: #C2C3CA;
 }
 
 @media (max-width: 575.98px) {
   .App {
     position: fixed;
-    bottom: 4px;
+    align-items: flex-end !important;
+    bottom: 0px;
     width: 100%;
   }
 
-  .app-container {
-    margin-right: auto;
-    margin-left: auto;
+  .inner-app-div {
+    border-width: 0px !important;
   }
 }

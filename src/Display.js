@@ -2,16 +2,15 @@ import React from "react";
 
 const Display = (props) => {
     return (
-        <div className="mx-auto app-container" style={{ maxWidth: "320px" }}>
+        <div className="mx-auto app-container">
             <div className="mx-auto">
                 <div>
                     <input
                         type="text"
                         readOnly
                         value={props.display.value}
-                        className="border-0 h1 font-weight-normal text-right mt-4"
+                        className="border-0 h1 font-weight-normal text-right mt-4 w-100"
                         id="display-out"
-                        style={{ maxWidth: "320px" }}
                     />
                 </div>
                 <div>
@@ -19,9 +18,8 @@ const Display = (props) => {
                         type="text"
                         readOnly
                         value={props.result.value || ""}
-                        className="border-0 h1 font-weight-normal text-right"
+                        className="border-0 h1 font-weight-normal text-right w-100"
                         id="result-out"
-                        style={{ maxWidth: "320px" }}
                     />
                 </div>
             </div>

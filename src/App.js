@@ -87,21 +87,23 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Display display={display} result={result} />
-      <ButtonPanel
-        clearAllOutput={clearAllOutput}
-        calculate={calculate}
-        delOnClick={delOnClick}
-        operatorBtnOnClick={operatorBtnOnClick}
-        numberBtnOnClick={numberBtnOnClick}
-        preventMoreDecimalPoints={preventMoreDecimalPoints}
-        add={add}
-        subtract={subtract}
-        multiply={multiply}
-        divide={divide}
-        equals={equals}
-      />
+    <div className="App mx-auto vh-100 d-flex align-items-center" style={{ maxWidth: "411px", }}>
+      <div className="inner-app-div border">
+        <Display display={display} result={result} />
+        <ButtonPanel
+          clearAllOutput={clearAllOutput}
+          calculate={calculate}
+          delOnClick={delOnClick}
+          operatorBtnOnClick={operatorBtnOnClick}
+          numberBtnOnClick={numberBtnOnClick}
+          preventMoreDecimalPoints={preventMoreDecimalPoints}
+          add={add}
+          subtract={subtract}
+          multiply={multiply}
+          divide={divide}
+          equals={equals}
+        />
+      </div>
     </div>
   );
 }
