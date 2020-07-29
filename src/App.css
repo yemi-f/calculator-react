@@ -32,6 +32,19 @@ button {
   color: #FFFEFC;
 }
 
+.operator-btn-div:hover,
+.number-btn-div:hover,
+.other-btn-div:hover {
+  cursor: pointer;
+}
+
+.operator-btn:focus,
+.number-btn:focus,
+.other-btn:focus {
+  outline: 0;
+}
+
+
 .other-btn-div {
   background-color: #C2C3CA;
 }
