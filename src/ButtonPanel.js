@@ -39,5 +39,4 @@ const ButtonPanel = (props) => {
     )
 }
 
-
 export default ButtonPanel;
