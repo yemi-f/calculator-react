@@ -20,14 +20,30 @@ function App() {
   const preventMoreDecimalPoints = () => {
     var str = display.value;
 
-    if (str[str.length - 1] !== "." && !pocket.includes(".")) {
-      setDisplay({ value: display.value + "." });
+    setPocket(pocket + ".")
+
+    if (countDecimalPoints(pocket) < 1) {
+      setDisplay({ value: str + "." })
+    } else {
+      setDisplay({ value: str })
     }
+    console.log(pocket)
+
   };
+
+  const countDecimalPoints = (str) => {
+    var count = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === ".") {
+        count++;
+      }
+    }
+    return count;
+  }
 
   const numberBtnOnClick = (num) => {
     setDisplay({ value: display.value + num });
-    setPocket(display.value);
+    setPocket(pocket + num);
   };
 
   const operatorBtnOnClick = (symbol) => {
@@ -84,6 +100,7 @@ function App() {
   const clearAllOutput = () => {
     setDisplay({ value: "" });
     setResult({ value: "" });
+    setPocket("");
   };
 
   return (
