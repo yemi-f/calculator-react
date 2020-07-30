@@ -10,5 +10,4 @@ const NumberButton = ({ num }) => {
     )
 }
 
-
 export default NumberButton;

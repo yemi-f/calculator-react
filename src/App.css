@@ -18,6 +18,11 @@ body {
   color: #C2C3CA;
 }
 
+#display-out:focus,
+#result-out:focus {
+  outline: 0;
+}
+
 button {
   margin: 8px;
 }
@@ -32,11 +37,16 @@ button {
   color: #FFFEFC;
 }
 
-.operator-btn-div:active .operator-btn,
-.number-btn-div:active .number-btn,
-.other-btn-div:active .other-btn {
-  position: relative;
-  top: 1px;
+.number-btn-div:active {
+  background-color: #4a4f5b;
+}
+
+.operator-btn-div:active {
+  background-color: #29a8eb;
+}
+
+.other-btn-div:active {
+  background-color: #cccdd3;
 }
 
 .operator-btn:focus,
