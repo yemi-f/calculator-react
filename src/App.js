@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { evaluate } from "mathjs";
+import { evaluate, format } from "mathjs";
 import Display from "./Display";
 import ButtonPanel from "./ButtonPanel";
 
@@ -87,7 +87,7 @@ function App() {
       str = str.split(divide).join("/");
       str = str.split(add).join("+");
       str = str.split(subtract).join("-");
-      setResult({ value: evaluate(str) });
+      setResult({ value: format(evaluate(str), { precision: 14 }) });
     } catch (error) {
       setResult({ value: "Bad expression" });
     }
